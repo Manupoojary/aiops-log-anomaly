@@ -29,4 +29,5 @@ python -m processing.pipeline
 ```
 
 ## Architecture
-Browser → Flask Backend → Pipeline → Kafka → ML Model → Elasticsearch → Grafana
+Browser → Flask Backend → Pipeline → Kafka → ML Model → Elasticsearch → Grafana/Dashboard
+
