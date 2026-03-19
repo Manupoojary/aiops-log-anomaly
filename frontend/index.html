@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Anomaly Detection Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>🚨 Anomaly Detection Dashboard</h1>
+<p>Real-time log anomaly detection</p>
+
+<div class="container">
+    <div class="card">
+
+        <label for="modelSelect">Select Model</label><br/>
+        <select id="modelSelect"></select>
+
+        <div>
+            <button class="start" onclick="startPipeline()">Start</button>
+            <button class="stop" onclick="stopPipeline()">Stop</button>
+        </div>
+
+        <div id="status" class="status stopped">
+            Status: Stopped
+        </div>
+
+        <div class="metric">
+            Anomalies Detected: <span id="anomalyCount">0</span>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

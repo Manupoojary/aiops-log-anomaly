@@ -1,0 +1,63 @@
+conda activate aiops
+
+open terminal 1 run below command
+    docker compose up -d
+    docker ps
+
+open terminal 2 run below command (optional)
+    python data/generate_logs.py 
+
+open terminal 3 run below command
+    python -m processing.pipeline
+
+
+open terminal 4 run below command
+    python ingestion/kafka_producer.py
+
+
+Step 6️⃣ Verify Data Flow (Very Important)
+Open browser:
+http://localhost:9200/_cat/indices?v
+
+You should see:
+green open logs-aiops ...
+
+Check document count:
+
+http://localhost:9200/logs-aiops/_count
+
+
+
+Step 7️⃣ (Optional) Open Grafana Dashboard
+http://localhost:3000
+
+Login:
+
+admin / admin
+
+
+⏹️ HOW TO STOP THE PROJECT
+Step 1️⃣ Stop Python Processes
+
+In Terminal 1 (pipeline):
+
+Ctrl + C
+
+
+Kafka producer already exits automatically.
+
+Step 2️⃣ Stop Docker Containers
+
+From project root:
+
+docker compose down
+
+
+✔ Stops Kafka, Elasticsearch, Grafana
+✔ Data remains (unless -v is used)
+
+🧹 CLEAN STOP (Optional – Full Reset)
+
+Use this only if you want a fresh start:
+
+docker compose down -v

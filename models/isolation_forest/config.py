@@ -1,0 +1,7 @@
+# Isolation Forest configuration
+
+N_ESTIMATORS = 100
+CONTAMINATION = 0.05
+RANDOM_STATE = 42
+
+MIN_TRAIN_SAMPLES = 50
