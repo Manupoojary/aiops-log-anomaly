@@ -153,7 +153,7 @@ if not df.empty:
     st.subheader("Live Anomaly Timeline")
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     timeline = df.groupby(
-        pd.Grouper(key='timestamp', freq='10s')
+        pd.Grouper(key='timestamp', freq='30s')
     ).agg(
         total=('anomaly', 'count'),
         anomalies=('anomaly', 'sum')
