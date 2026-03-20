@@ -2,7 +2,8 @@ import re
 import os
 import time
 
-LOG_FILE = "../data/live_logs.log"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, "data", "live_logs.log")
 
 LOG_PATTERN = re.compile(
     r"(.*?) (INFO|WARN|ERROR) (\w+) (.*?) user_id=(\d+)"

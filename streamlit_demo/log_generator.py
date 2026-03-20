@@ -1,6 +1,7 @@
 import random
 import time
 from datetime import datetime
+import os
 
 SERVICES = ["AuthService", "PaymentService", "OrderService"]
 
@@ -23,7 +24,8 @@ ERROR_MSGS = [
     "Service unavailable"
 ]
 
-LOG_FILE = "../data/live_logs.log"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, "data", "live_logs.log")
 
 def generate_log_line():
     is_anomaly = random.random() < 0.05
@@ -34,7 +36,9 @@ def generate_log_line():
     user_id = random.randint(1, 500)
     return f"{timestamp} {level} {service} {message} user_id={user_id}\n"
 
+
 def start_generating():
+    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
     print(f"Starting log generation → {LOG_FILE}")
     with open(LOG_FILE, "a") as f:
         while True:
