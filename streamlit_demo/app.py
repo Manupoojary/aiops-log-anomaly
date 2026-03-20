@@ -132,7 +132,7 @@ if not df.empty:
             df.groupby('service').size().reset_index(name='count'),
             x='service', y='count', color='service'
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, key="chart1")
 
     with c2:
         st.subheader("Anomaly vs Normal")
