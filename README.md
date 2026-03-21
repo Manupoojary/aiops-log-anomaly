@@ -35,12 +35,10 @@ This project has two versions:
 
 ## Dashboard Preview
 
-> **Live metrics from the deployed app:**
-> - **1,653** total logs processed
-> - **154** anomalies detected (9.32% anomaly rate)
+> **Live metrics update in real time as new logs are processed.**
 > - Services monitored: AuthService · OrderService · PaymentService
-> - Real-time log feed with per-row anomaly scoring
-> - Switch between Isolation Forest and LSTM from the sidebar
+> - Real-time anomaly scoring using Isolation Forest or LSTM
+> - Switch algorithms from the sidebar at any time
 
 *Screenshots:*
 
