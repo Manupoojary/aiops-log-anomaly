@@ -1,13 +1,20 @@
 # 🔍 LogIQ — AIOps Log Anomaly Detection Platform
 
-![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-IsolationForest-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-LSTM-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache-Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/Elastic-Search-005571?style=flat&logo=elasticsearch&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat)
+[![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://aiops-log-anomaly-qrnsm8xw9wykuppcv3vtwd.streamlit.app)
+
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-IsolationForest-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
+
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-LSTM-FF6F00?style=flat&logo=tensorflow&logoColor=white)](https://tensorflow.org)
+
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
+
+[![Kafka](https://img.shields.io/badge/Apache-Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
+
+[![Elasticsearch](https://img.shields.io/badge/Elastic-Search-005571?style=flat&logo=elasticsearch&logoColor=white)](https://elastic.co)
+
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://opensource.org/licenses/MIT)
 
 **🌐 Live Demo → [https://aiops-log-anomaly-qrnsm8xw9wykuppcv3vtwd.streamlit.app](https://aiops-log-anomaly-qrnsm8xw9wykuppcv3vtwd.streamlit.app)**
 
